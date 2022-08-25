@@ -6,8 +6,10 @@
     <title>Parallelism in Serverless Workflow :: Kogito Serverless Workflow Guides</title>
     <meta name="description" content="Working with parallelism in Serverless Workflow">
     <meta name="keywords" content="kogito, workflow, quarkus, serverless, parallelism">
-    <meta name="generator" content="Antora 3.0.1">
+    <meta name="generator" content="Antora 3.0.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+
 <link rel="stylesheet" href="../../../_/css/search.css">
 <link rel="stylesheet" href="../../../_/css/menu.css">
 <link rel="stylesheet" href="../../../_/css/tabs.css">
@@ -65,10 +67,13 @@
     <span class="nav-text">Getting Started</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../getting-started/create-your-first-workflow-service.html">Creating your first Serverless Workflow service</a>
+    <a class="nav-link" href="../getting-started/create-your-first-workflow-service.html">Creating your first workflow service</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../getting-started/cncf-serverless-workflow-specification-support.html">CNCF Serverless Workflow specification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/getting-familiar-with-our-tooling.html">Getting familiar with Serverless Workflow tooling</a>
   </li>
 </ul>
   </li>
@@ -86,6 +91,12 @@
     <a class="nav-link" href="working-with-parallelism.html">Parallelism in Serverless Workflow</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="configuration-properties.html">Configuration properties in Serverless Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="defining-an-input-schema-for-workflows.html">Input schema definition for Serverless Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="custom-functions-support.html">Custom functions for your Serverless Workflow service</a>
   </li>
 </ul>
@@ -95,16 +106,13 @@
     <span class="nav-text">Tooling</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-overview.html">Serverless Workflow editor</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-chrome-extension.html">Chrome GitHub extension for Serverless Workflow editor</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-vscode-extension.html">VS Code extension for Serverless Workflow editor</a>
   </li>
-</ul>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-chrome-extension.html">Chrome GitHub extension for Serverless Workflow editor</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -131,6 +139,9 @@
     <a class="nav-link" href="../service-orchestration/orchestration-of-openapi-based-services.html">Orchestrating the OpenAPI services</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../service-orchestration/configuring-openapi-services-endpoints.html">Configuring the OpenAPI services endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../service-orchestration/orchestration-of-grpc-services.html">Orchestration of gRPC based services</a>
   </li>
 </ul>
@@ -140,10 +151,19 @@
     <span class="nav-text">Eventing</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/consume-producing-events-with-kafka.html">Consuming and producing events with Kafka</a>
+    <a class="nav-link" href="../eventing/handling-events-on-workflows.html">Event state in Serverless Workflow</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/working-with-callbacks.html">Callbacks in Serverless Workflow</a>
+    <a class="nav-link" href="../eventing/consume-producing-events-with-kafka.html">Consuming and producing events using Apache Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../eventing/consume-produce-events-with-knative-eventing.html">Consuming and producing events on Knative Eventing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../eventing/event-correlation-with-workflows.html">Event correlation in Serverless Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../eventing/working-with-callbacks.html">Callback state in Serverless Workflow</a>
   </li>
 </ul>
   </li>
@@ -167,10 +187,22 @@
     <a class="nav-link" href="../testing-and-troubleshooting/mocking-http-cloudevents-with-wiremock.html">Mocking HTTP CloudEvents sink using WireMock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#testing-and-troubleshooting/mocking-opnapi-services-with-wiremock.adoc">Mocking OpenAPI services using WireMock</a>
+    <a class="nav-link" href="../testing-and-troubleshooting/mocking-openapi-services-with-wiremock.html">Mocking OpenAPI services using WireMock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Testing your Serverless Workflow application using REST Assured</a>
+    <a class="nav-link" href="../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Testing your workflow application using REST Assured</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../testing-and-troubleshooting/integration-tests-with-postgresql.html">Serverless Workflow integration test using PostgreSQL</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Persistence</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../persistence/persistence-with-postgresql.html">Running a workflow service using PostgreSQL</a>
   </li>
 </ul>
   </li>
@@ -179,7 +211,7 @@
     <span class="nav-text">Cloud</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../cloud/build-workflow-image-with-quarkus-cli.html">Building Serverless Workflow Images using Quarkus CLI</a>
+    <a class="nav-link" href="../cloud/build-workflow-image-with-quarkus-cli.html">Building workflow images using Quarkus CLI</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../cloud/deploying-on-minikube.html">Deploying your Serverless Workflow application on Minikube</a>
@@ -191,7 +223,7 @@
     <span class="nav-text">Integrations</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../integrations/serverless-dashboard-with-runtime-data.html">Displaying Serverless Workflow data in dashboards</a>
+    <a class="nav-link" href="../integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow data in dashboards</a>
   </li>
 </ul>
   </li>
@@ -212,14 +244,23 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Kogito Serverless Workflow Guides</span>
-    <span class="version">main</span>
+    <span class="version">snapshot</span>
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../index.html">Kogito Serverless Workflow Guides</a>
+      <a class="title" href="../../latest/index.html">Kogito Serverless Workflow Guides</a>
       <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+        <li class="version is-current">
+          <a href="../index.html">snapshot</a>
+        </li>
+        <li class="version">
+          <a href="../../1.26.0-SNAPSHOT/index.html">1.26-RC</a>
+        </li>
+        <li class="version is-latest">
+          <a href="../../latest/index.html">1.25</a>
+        </li>
+        <li class="version">
+          <a href="../../1.24.1.Final/index.html">1.24</a>
         </li>
       </ul>
     </li>
@@ -231,7 +272,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../index.html" class="home-link"></a>
+  <a href="../../latest/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Kogito Serverless Workflow Guides</a></li>
@@ -239,6 +280,15 @@
     <li><a href="working-with-parallelism.html">Parallelism in Serverless Workflow</a></li>
   </ul>
 </nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
+  <div class="version-menu">
+    <a class="version is-current" href="working-with-parallelism.html">snapshot</a>
+    <a class="version" href="../../1.26.0-SNAPSHOT/core/working-with-parallelism.html">1.26-RC</a>
+    <a class="version" href="../../latest/core/working-with-parallelism.html">1.25</a>
+    <a class="version" href="../../1.24.1.Final/core/working-with-parallelism.html">1.24</a>
+  </div>
+</div>
   <div class="edit-this-page"><a href="https://github.com/kiegroup/kogito-docs/edit/main/serverlessworkflow/modules/ROOT/pages/core/working-with-parallelism.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
@@ -253,7 +303,7 @@
 <p>This document describes how you can run parallel tasks in Serverless Workflow.</p>
 </div>
 <div class="paragraph">
-<p>The testing procedure described in this document is based on the <a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-service-calls-quarkus"><code>serverless-workflow-service-calls-quarkus</code></a> example application in GitHub repository.</p>
+<p>The testing procedure described in this document is based on the <code>serverless-workflow-service-calls-quarkus</code> example application in <a href="https://github.com/kiegroup/kogito-examples/tree/main/serverless-workflow-examples/serverless-workflow-service-calls-quarkus">GitHub repository</a>.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -275,16 +325,16 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="proc-parallel-creating-the-workflow"><a class="anchor" href="#proc-parallel-creating-the-workflow"></a>Creating a parallel Serverless Workflow</h2>
+<h2 id="proc-parallel-creating-the-workflow"><a class="anchor" href="#proc-parallel-creating-the-workflow"></a>Creating a parallel workflow</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>You can create a Serverless Workflow, which performs a series of parallel tasks.</p>
+<p>You can create a workflow, which performs a series of parallel tasks.</p>
 </div>
 <div class="ulist">
 <div class="title">Prerequisites</div>
 <ul>
 <li>
-<p>A Serverless Workflow project is created.</p>
+<p>A workflow project is created.</p>
 <div class="paragraph">
 <p>For more information about creating a workflow project, see <a href="../getting-started/create-your-first-workflow-service.html" class="xref page">Creating your first Serverless Workflow service</a>.</p>
 </div>
@@ -295,7 +345,7 @@
 <div class="title">Procedure</div>
 <ol class="arabic">
 <li>
-<p>Create a Serverless Workflow file named as <code>parallel.sw.json</code> under the <code>src/main/resources/</code> directory.</p>
+<p>Create a workflow file named as <code>parallel.sw.json</code> under the <code>src/main/resources/</code> directory.</p>
 </li>
 <li>
 <p>Add the following content to the <code>parallel.sw.json</code> file:</p>
@@ -415,10 +465,10 @@
 </div>
 </div>
 <div class="sect1">
-<h2 id="proc-parallel-run-workflow"><a class="anchor" href="#proc-parallel-run-workflow"></a>Running a parallel Serverless Workflow</h2>
+<h2 id="proc-parallel-run-workflow"><a class="anchor" href="#proc-parallel-run-workflow"></a>Running a parallel workflow</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>After you create a Serverless Workflow that perform a series of parallel tasks, you can run the workflow.</p>
+<p>After you create a workflow that performs a series of parallel tasks, you can run the workflow.</p>
 </div>
 <div class="ulist">
 <div class="title">Prerequisites</div>
@@ -426,19 +476,19 @@
 <li>
 <p>A parallel workflow is created.</p>
 <div class="paragraph">
-<p>For more information, see <a href="#proc-parallel-creating-the-workflow">Creating a parallel Serverless Workflow</a>.</p>
+<p>For more information, see <a href="#proc-parallel-creating-the-workflow">Creating a parallel workflow</a>.</p>
 </div>
 </li>
 <li>
-<p>The Serverless Workflow application is up and running.</p>
+<p>The workflow application is up and running.</p>
 <div class="openblock">
 <div class="content">
 <div class="paragraph">
-<p>You can start the Serverless Workflow application in development mode by using the following command:</p>
+<p>You can start the workflow application in development mode by using the following command:</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">`mvn quarkus:dev`</code></pre>
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">mvn quarkus:dev</code></pre>
 </div>
 </div>
 </div>
@@ -494,7 +544,7 @@
 </ol>
 </div>
 <div class="sect2">
-<h3 id="proc-parallel-run-branches"><a class="anchor" href="#proc-parallel-run-branches"></a>Running some branches in parallel Serverless Workflow</h3>
+<h3 id="proc-parallel-run-branches"><a class="anchor" href="#proc-parallel-run-branches"></a>Running some branches in parallel workflow</h3>
 <div class="paragraph">
 <p>You can define the <code>"completionType": "atLeast"</code> to run only some branches in parallel workflow, instead of defining <code>"completionType": "allOf"</code>. When you define <code>"completionType": "atLeast"</code>, you also need to define the minimum number of branches that you want to run by defining the <code>"numCompleted":</code> property.</p>
 </div>
@@ -504,7 +554,7 @@
 <li>
 <p>A parallel workflow is created.</p>
 <div class="paragraph">
-<p>For more information, see <a href="#proc-parallel-creating-the-workflow">Creating a parallel Serverless Workflow</a>.</p>
+<p>For more information, see <a href="#proc-parallel-creating-the-workflow">Creating a parallel workflow</a>.</p>
 </div>
 </li>
 </ul>
@@ -517,7 +567,7 @@
 <div class="openblock">
 <div class="content">
 <div class="listingblock">
-<div class="title">Example parallel Serverless Workflow</div>
+<div class="title">Example parallel workflow</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
   "id": "parallel",
@@ -651,7 +701,7 @@
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../getting-started/create-your-first-workflow-service.html" class="xref page">Creating your first Serverless Workflow service</a></p>
+<p><a href="../getting-started/create-your-first-workflow-service.html" class="xref page">Creating your first workflow service</a></p>
 </li>
 </ul>
 </div>

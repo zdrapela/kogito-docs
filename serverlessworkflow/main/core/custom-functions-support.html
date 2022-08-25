@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Custom functions for your Serverless Workflow service :: Kogito Serverless Workflow Guides</title>
-    <meta name="description" content="Custom Functions Support">
-    <meta name="keywords" content="kogito, workflow, serverless, cncf, specification, functions, java">
-    <meta name="generator" content="Antora 3.0.1">
+    <meta name="generator" content="Antora 3.0.3">
     <link rel="stylesheet" href="../../../_/css/site.css">
+<link rel="icon" href="../../../_/img/favicon.ico" type="image/x-icon">
+
 <link rel="stylesheet" href="../../../_/css/search.css">
 <link rel="stylesheet" href="../../../_/css/menu.css">
 <link rel="stylesheet" href="../../../_/css/tabs.css">
@@ -65,10 +65,13 @@
     <span class="nav-text">Getting Started</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../getting-started/create-your-first-workflow-service.html">Creating your first Serverless Workflow service</a>
+    <a class="nav-link" href="../getting-started/create-your-first-workflow-service.html">Creating your first workflow service</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../getting-started/cncf-serverless-workflow-specification-support.html">CNCF Serverless Workflow specification</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/getting-familiar-with-our-tooling.html">Getting familiar with Serverless Workflow tooling</a>
   </li>
 </ul>
   </li>
@@ -85,6 +88,12 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="working-with-parallelism.html">Parallelism in Serverless Workflow</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="configuration-properties.html">Configuration properties in Serverless Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="defining-an-input-schema-for-workflows.html">Input schema definition for Serverless Workflow</a>
+  </li>
   <li class="nav-item is-current-page" data-depth="2">
     <a class="nav-link" href="custom-functions-support.html">Custom functions for your Serverless Workflow service</a>
   </li>
@@ -95,16 +104,13 @@
     <span class="nav-text">Tooling</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <button class="nav-item-toggle"></button>
     <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-overview.html">Serverless Workflow editor</a>
-<ul class="nav-list">
-  <li class="nav-item" data-depth="3">
-    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-chrome-extension.html">Chrome GitHub extension for Serverless Workflow editor</a>
   </li>
-  <li class="nav-item" data-depth="3">
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-vscode-extension.html">VS Code extension for Serverless Workflow editor</a>
   </li>
-</ul>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../tooling/serverless-workflow-editor/swf-editor-chrome-extension.html">Chrome GitHub extension for Serverless Workflow editor</a>
   </li>
   <li class="nav-item" data-depth="2">
     <button class="nav-item-toggle"></button>
@@ -131,6 +137,9 @@
     <a class="nav-link" href="../service-orchestration/orchestration-of-openapi-based-services.html">Orchestrating the OpenAPI services</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../service-orchestration/configuring-openapi-services-endpoints.html">Configuring the OpenAPI services endpoints</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../service-orchestration/orchestration-of-grpc-services.html">Orchestration of gRPC based services</a>
   </li>
 </ul>
@@ -140,10 +149,19 @@
     <span class="nav-text">Eventing</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/consume-producing-events-with-kafka.html">Consuming and producing events with Kafka</a>
+    <a class="nav-link" href="../eventing/handling-events-on-workflows.html">Event state in Serverless Workflow</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../eventing/working-with-callbacks.html">Callbacks in Serverless Workflow</a>
+    <a class="nav-link" href="../eventing/consume-producing-events-with-kafka.html">Consuming and producing events using Apache Kafka</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../eventing/consume-produce-events-with-knative-eventing.html">Consuming and producing events on Knative Eventing</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../eventing/event-correlation-with-workflows.html">Event correlation in Serverless Workflow</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../eventing/working-with-callbacks.html">Callback state in Serverless Workflow</a>
   </li>
 </ul>
   </li>
@@ -167,10 +185,22 @@
     <a class="nav-link" href="../testing-and-troubleshooting/mocking-http-cloudevents-with-wiremock.html">Mocking HTTP CloudEvents sink using WireMock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="#testing-and-troubleshooting/mocking-opnapi-services-with-wiremock.adoc">Mocking OpenAPI services using WireMock</a>
+    <a class="nav-link" href="../testing-and-troubleshooting/mocking-openapi-services-with-wiremock.html">Mocking OpenAPI services using WireMock</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Testing your Serverless Workflow application using REST Assured</a>
+    <a class="nav-link" href="../testing-and-troubleshooting/basic-integration-tests-with-restassured.html">Testing your workflow application using REST Assured</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../testing-and-troubleshooting/integration-tests-with-postgresql.html">Serverless Workflow integration test using PostgreSQL</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Persistence</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../persistence/persistence-with-postgresql.html">Running a workflow service using PostgreSQL</a>
   </li>
 </ul>
   </li>
@@ -179,7 +209,7 @@
     <span class="nav-text">Cloud</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../cloud/build-workflow-image-with-quarkus-cli.html">Building Serverless Workflow Images using Quarkus CLI</a>
+    <a class="nav-link" href="../cloud/build-workflow-image-with-quarkus-cli.html">Building workflow images using Quarkus CLI</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../cloud/deploying-on-minikube.html">Deploying your Serverless Workflow application on Minikube</a>
@@ -191,7 +221,7 @@
     <span class="nav-text">Integrations</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../integrations/serverless-dashboard-with-runtime-data.html">Displaying Serverless Workflow data in dashboards</a>
+    <a class="nav-link" href="../integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow data in dashboards</a>
   </li>
 </ul>
   </li>
@@ -212,14 +242,23 @@
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
     <span class="title">Kogito Serverless Workflow Guides</span>
-    <span class="version">main</span>
+    <span class="version">snapshot</span>
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../index.html">Kogito Serverless Workflow Guides</a>
+      <a class="title" href="../../latest/index.html">Kogito Serverless Workflow Guides</a>
       <ul class="versions">
-        <li class="version is-current is-latest">
-          <a href="../index.html">main</a>
+        <li class="version is-current">
+          <a href="../index.html">snapshot</a>
+        </li>
+        <li class="version">
+          <a href="../../1.26.0-SNAPSHOT/index.html">1.26-RC</a>
+        </li>
+        <li class="version is-latest">
+          <a href="../../latest/index.html">1.25</a>
+        </li>
+        <li class="version">
+          <a href="../../1.24.1.Final/index.html">1.24</a>
         </li>
       </ul>
     </li>
@@ -231,7 +270,7 @@
 <main class="article">
 <div class="toolbar" role="navigation">
 <button class="nav-toggle"></button>
-  <a href="../index.html" class="home-link"></a>
+  <a href="../../latest/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
     <li><a href="../index.html">Kogito Serverless Workflow Guides</a></li>
@@ -239,6 +278,15 @@
     <li><a href="custom-functions-support.html">Custom functions for your Serverless Workflow service</a></li>
   </ul>
 </nav>
+<div class="page-versions">
+  <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
+  <div class="version-menu">
+    <a class="version is-current" href="custom-functions-support.html">snapshot</a>
+    <a class="version" href="../../1.26.0-SNAPSHOT/core/custom-functions-support.html">1.26-RC</a>
+    <a class="version" href="../../latest/core/custom-functions-support.html">1.25</a>
+    <a class="version" href="../../1.24.1.Final/core/custom-functions-support.html">1.24</a>
+  </div>
+</div>
   <div class="edit-this-page"><a href="https://github.com/kiegroup/kogito-docs/edit/main/serverlessworkflow/modules/ROOT/pages/core/custom-functions-support.adoc">Edit this Page</a></div>
   </div>
   <div class="content">
@@ -338,7 +386,7 @@
 <h2 id="con-func-java"><a class="anchor" href="#con-func-java"></a><code>java</code> custom function</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Kogito supports the <code>java</code> functions within an Apache Maven project, in which you define your Serverless Workflow service.</p>
+<p>Kogito supports the <code>java</code> functions within an Apache Maven project, in which you define your workflow service.</p>
 </div>
 <div class="paragraph">
 <p>The following example shows the declaration of a <code>java</code> function:</p>
@@ -369,7 +417,7 @@
 </tr>
 <tr>
 <td><i class="conum" data-value="3"></i><b>3</b></td>
-<td><code>service:java:com.acme.MyInterfaceOrClass::myMethod</code> is the Kogito custom operation definition. In the custom operation definition, <code>service</code> is the reserved operation keyword followed by the <code>java</code> keyword. <code>com.acme.MyInterfaceOrClass</code> is the FQCN (Fully Qualified Class Name) of the interface or implementation class followed by the method name (<code>myMethod</code>).</td>
+<td><code>service:java:com.acme.MyInterfaceOrClass::myMethod</code> is the custom operation definition. In the custom operation definition, <code>service</code> is the reserved operation keyword followed by the <code>java</code> keyword. <code>com.acme.MyInterfaceOrClass</code> is the FQCN (Fully Qualified Class Name) of the interface or implementation class followed by the method name (<code>myMethod</code>).</td>
 </tr>
 </table>
 </div>
@@ -396,7 +444,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p>To call the function shown in the previous example within your Serverless Workflow service, you can extract the required JSON value using <a href="understanding-jq-expressions.html" class="xref page"><code>jq</code> expression</a> or pass the JSON value without using arguments.</p>
+<p>To call the function shown in the previous example within your workflow service, you can extract the required JSON value using <a href="understanding-jq-expressions.html" class="xref page"><code>jq</code> expression</a> or pass the JSON value without using arguments.</p>
 </div>
 <div class="paragraph">
 <p>In the following example, the caller sends the entire payload:</p>
@@ -450,7 +498,7 @@
 </div>
 </div>
 <div class="paragraph">
-<p>In the previous example, the <code>JsonNode</code> that the <code>java</code> function returns is the new payload in the Serverless Workflow execution.</p>
+<p>In the previous example, the <code>JsonNode</code> that the <code>java</code> function returns is the new payload in the workflow execution.</p>
 </div>
 <div class="admonitionblock warning">
 <table>
@@ -474,10 +522,10 @@
 <div class="ulist">
 <ul>
 <li>
-<p><a href="../getting-started/cncf-serverless-workflow-specification-support.html" class="xref page">CNCF Serverless Workflow Specification</a></p>
+<p><a href="../getting-started/cncf-serverless-workflow-specification-support.html" class="xref page">CNCF Serverless Workflow specification</a></p>
 </li>
 <li>
-<p><a href="understanding-jq-expressions.html" class="xref page">Understanding JQ Expressions</a>.</p>
+<p><a href="understanding-jq-expressions.html" class="xref page">jq expressions in Serverless Workflow</a></p>
 </li>
 </ul>
 </div>
