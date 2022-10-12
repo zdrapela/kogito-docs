@@ -100,6 +100,9 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../core/custom-functions-support.html">Custom functions for your Serverless Workflow service</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../core/timeouts-support.html">Timeouts in Serverless Workflow</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -248,7 +251,7 @@
     <span class="nav-text">Integrations</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="../integrations/expose-metrics-to-prometheus.html">Exposing the workflow base metrics to Prometheus</a>
+    <a class="nav-link" href="../integrations/expose-metrics-to-prometheus.html">Exposing workflow base metrics to Prometheus</a>
   </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow data in dashboards</a>
@@ -281,8 +284,14 @@
         <li class="version is-current">
           <a href="../index.html">snapshot</a>
         </li>
+        <li class="version">
+          <a href="../../1.29.0-SNAPSHOT/index.html">1.29-RC</a>
+        </li>
         <li class="version is-latest">
-          <a href="../../latest/index.html">1.27</a>
+          <a href="../../latest/index.html">1.28</a>
+        </li>
+        <li class="version">
+          <a href="../../1.27.0.Final/index.html">1.27</a>
         </li>
         <li class="version">
           <a href="../../1.26.0.Final/index.html">1.26</a>
@@ -315,7 +324,9 @@
   <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
   <div class="version-menu">
     <a class="version is-current" href="deploying-on-minikube.html">snapshot</a>
-    <a class="version" href="../../latest/cloud/deploying-on-minikube.html">1.27</a>
+    <a class="version" href="../../1.29.0-SNAPSHOT/cloud/deploying-on-minikube.html">1.29-RC</a>
+    <a class="version" href="../../latest/cloud/deploying-on-minikube.html">1.28</a>
+    <a class="version" href="../../1.27.0.Final/cloud/deploying-on-minikube.html">1.27</a>
     <a class="version" href="../../1.26.0.Final/cloud/deploying-on-minikube.html">1.26</a>
     <a class="version" href="../../1.25.0.Final/cloud/deploying-on-minikube.html">1.25</a>
     <a class="version" href="../../1.24.1.Final/cloud/deploying-on-minikube.html">1.24</a>
@@ -852,7 +863,7 @@ For more information about installing the Quarkus CLI, see <a href="https://quar
 <div class="tab-pane" aria-labelledby="tabset1_gradle">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">quarkus-kubernetes 'io.quarkus:quarkus-kubernetes:2.12.2.Final'
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">quarkus-kubernetes 'io.quarkus:quarkus-kubernetes:2.13.0.Final'
 quarkus-kubernetes 'org.kie.kogito:kogito-addons-quarkus-knative-eventing:main'</code></pre>
 </div>
 </div>
