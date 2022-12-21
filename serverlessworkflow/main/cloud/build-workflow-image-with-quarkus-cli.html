@@ -244,6 +244,9 @@
     <a class="nav-link" href="deploying-on-minikube.html">Deploying your Serverless Workflow application on Minikube</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="deploying-on-kubernetes.html">Deploying your Serverless Workflow application on Kubernetes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="kubernetes-service-discovery.html">Kubernetes service discovery in Serverless Workflow</a>
   </li>
 </ul>
@@ -286,8 +289,17 @@
         <li class="version is-current">
           <a href="../index.html">snapshot</a>
         </li>
+        <li class="version">
+          <a href="../../1.32.0-SNAPSHOT/index.html">1.32-RC</a>
+        </li>
         <li class="version is-latest">
-          <a href="../../latest/index.html">1.29</a>
+          <a href="../../latest/index.html">1.31</a>
+        </li>
+        <li class="version">
+          <a href="../../1.30.0.Final/index.html">1.30</a>
+        </li>
+        <li class="version">
+          <a href="../../1.29.0.Final/index.html">1.29</a>
         </li>
         <li class="version">
           <a href="../../1.28.0.Final/index.html">1.28</a>
@@ -326,7 +338,10 @@
   <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
   <div class="version-menu">
     <a class="version is-current" href="build-workflow-image-with-quarkus-cli.html">snapshot</a>
-    <a class="version" href="../../latest/cloud/build-workflow-image-with-quarkus-cli.html">1.29</a>
+    <a class="version" href="../../1.32.0-SNAPSHOT/cloud/build-workflow-image-with-quarkus-cli.html">1.32-RC</a>
+    <a class="version" href="../../latest/cloud/build-workflow-image-with-quarkus-cli.html">1.31</a>
+    <a class="version" href="../../1.30.0.Final/cloud/build-workflow-image-with-quarkus-cli.html">1.30</a>
+    <a class="version" href="../../1.29.0.Final/cloud/build-workflow-image-with-quarkus-cli.html">1.29</a>
     <a class="version" href="../../1.28.0.Final/cloud/build-workflow-image-with-quarkus-cli.html">1.28</a>
     <a class="version" href="../../1.27.0.Final/cloud/build-workflow-image-with-quarkus-cli.html">1.27</a>
     <a class="version" href="../../1.26.0.Final/cloud/build-workflow-image-with-quarkus-cli.html">1.26</a>
@@ -360,7 +375,7 @@
 <p>Latest version of Docker is installed. Alternatively, you can use <a href="https://github.com/GoogleContainerTools/jib">Jib</a> to build container images. However, Docker is required to build GraalVM native image using the Quarkus native builder image.</p>
 </li>
 <li>
-<p>Optionally, GraalVM 22.2.0 is installed.</p>
+<p>Optionally, GraalVM 22.3.0 is installed.</p>
 </li>
 </ul>
 </div>
@@ -739,7 +754,7 @@ INFO  [io.quarkus] (main) serverless-workflow-greeting-quarkus 1.22.1.Final nati
 <div class="tab-pane" aria-labelledby="tabset2_example-request">
 <div class="listingblock">
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">curl -X POST -H 'Content-Type:application/json' -H 'Accept:application/json' -d '{"workflowdata" : {"name": "John", "language": "English"}}' http://localhost:8080/jsongreet</code></pre>
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">curl -X POST -H 'Content-Type:application/json' -H 'Accept:application/json' -d '{"name": "John", "language": "English"}' http://localhost:8080/jsongreet</code></pre>
 </div>
 </div>
 </div>
@@ -773,6 +788,9 @@ INFO  [io.quarkus] (main) serverless-workflow-greeting-quarkus 1.22.1.Final nati
 <ul>
 <li>
 <p><a href="deploying-on-minikube.html" class="xref page">Deploying your Serverless Workflow application on Minikube</a></p>
+</li>
+<li>
+<p><a href="deploying-on-kubernetes.html" class="xref page">Deploying your Serverless Workflow application on Kubernetes</a></p>
 </li>
 </ul>
 </div>

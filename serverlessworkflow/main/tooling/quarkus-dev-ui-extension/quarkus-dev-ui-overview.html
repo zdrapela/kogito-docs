@@ -244,6 +244,9 @@
     <a class="nav-link" href="../../cloud/deploying-on-minikube.html">Deploying your Serverless Workflow application on Minikube</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../../cloud/deploying-on-kubernetes.html">Deploying your Serverless Workflow application on Kubernetes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../../cloud/kubernetes-service-discovery.html">Kubernetes service discovery in Serverless Workflow</a>
   </li>
 </ul>
@@ -286,8 +289,17 @@
         <li class="version is-current">
           <a href="../../index.html">snapshot</a>
         </li>
+        <li class="version">
+          <a href="../../../1.32.0-SNAPSHOT/index.html">1.32-RC</a>
+        </li>
         <li class="version is-latest">
-          <a href="../../../latest/index.html">1.29</a>
+          <a href="../../../latest/index.html">1.31</a>
+        </li>
+        <li class="version">
+          <a href="../../../1.30.0.Final/index.html">1.30</a>
+        </li>
+        <li class="version">
+          <a href="../../../1.29.0.Final/index.html">1.29</a>
         </li>
         <li class="version">
           <a href="../../../1.28.0.Final/index.html">1.28</a>
@@ -326,7 +338,10 @@
   <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
   <div class="version-menu">
     <a class="version is-current" href="quarkus-dev-ui-overview.html">snapshot</a>
-    <a class="version" href="../../../latest/tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">1.29</a>
+    <a class="version" href="../../../1.32.0-SNAPSHOT/tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">1.32-RC</a>
+    <a class="version" href="../../../latest/tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">1.31</a>
+    <a class="version" href="../../../1.30.0.Final/tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">1.30</a>
+    <a class="version" href="../../../1.29.0.Final/tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">1.29</a>
     <a class="version" href="../../../1.28.0.Final/tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">1.28</a>
     <a class="version" href="../../../1.27.0.Final/tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">1.27</a>
     <a class="version" href="../../../1.26.0.Final/tooling/quarkus-dev-ui-extension/quarkus-dev-ui-overview.html">1.26</a>
@@ -359,7 +374,7 @@
 <div class="title">Prerequisites</div>
 <ul>
 <li>
-<p>Quarkus 2.13.2.Final is installed.</p>
+<p>Quarkus 2.15.0.Final is installed.</p>
 </li>
 <li>
 <p>Quarkus command line interface (CLI) is installed. For more information, see <a href="https://quarkus.io/guides/cli-tooling">Installing the Quarkus CLI</a>.</p>
@@ -396,24 +411,24 @@
 </div>
 </li>
 <li>
-<p>Enter the following command to add <code>kogito-addons-quarkus-process-svg</code> extension that provides SVG diagrams to the consoles:</p>
+<p>Enter the following command to add the <code>kogito-addons-quarkus-source-files</code> extension that provides the source code to generate the Serverless Workflow diagram in the consoles:</p>
 <div class="openblock">
 <div class="content">
 <div class="listingblock">
-<div class="title">Install Kogito SVG add-on extension</div>
+<div class="title">Install Kogito source files add-on extension</div>
 <div class="content">
-<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">quarkus ext add org.kie.kogito:kogito-addons-quarkus-process-svg</code></pre>
+<pre class="highlightjs highlight"><code class="language-shell hljs" data-lang="shell">quarkus ext add org.kie.kogito:kogito-addons-quarkus-source-files</code></pre>
 </div>
 </div>
 <div class="paragraph">
 <p>Executing the previous command adds the following dependency to <code>pom.xml</code> file of your project:</p>
 </div>
 <div class="listingblock">
-<div class="title">Process-SVG dependency in <code>pom.xml</code> file</div>
+<div class="title">source files add-on dependency in <code>pom.xml</code> file</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-xml hljs" data-lang="xml">&lt;dependency&gt;
   &lt;groupId&gt;org.kie.kogito&lt;/groupId&gt;
-  &lt;artifactId&gt;kogito-addons-quarkus-process-svg&lt;/artifactId&gt;
+  &lt;artifactId&gt;kogito-addons-quarkus-source-files&lt;/artifactId&gt;
 &lt;/dependency&gt;</code></pre>
 </div>
 </div>

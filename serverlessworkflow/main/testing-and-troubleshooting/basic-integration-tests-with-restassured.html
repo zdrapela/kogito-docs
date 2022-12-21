@@ -244,6 +244,9 @@
     <a class="nav-link" href="../cloud/deploying-on-minikube.html">Deploying your Serverless Workflow application on Minikube</a>
   </li>
   <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../cloud/deploying-on-kubernetes.html">Deploying your Serverless Workflow application on Kubernetes</a>
+  </li>
+  <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../cloud/kubernetes-service-discovery.html">Kubernetes service discovery in Serverless Workflow</a>
   </li>
 </ul>
@@ -286,8 +289,17 @@
         <li class="version is-current">
           <a href="../index.html">snapshot</a>
         </li>
+        <li class="version">
+          <a href="../../1.32.0-SNAPSHOT/index.html">1.32-RC</a>
+        </li>
         <li class="version is-latest">
-          <a href="../../latest/index.html">1.29</a>
+          <a href="../../latest/index.html">1.31</a>
+        </li>
+        <li class="version">
+          <a href="../../1.30.0.Final/index.html">1.30</a>
+        </li>
+        <li class="version">
+          <a href="../../1.29.0.Final/index.html">1.29</a>
         </li>
         <li class="version">
           <a href="../../1.28.0.Final/index.html">1.28</a>
@@ -326,7 +338,10 @@
   <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
   <div class="version-menu">
     <a class="version is-current" href="basic-integration-tests-with-restassured.html">snapshot</a>
-    <a class="version" href="../../latest/testing-and-troubleshooting/basic-integration-tests-with-restassured.html">1.29</a>
+    <a class="version" href="../../1.32.0-SNAPSHOT/testing-and-troubleshooting/basic-integration-tests-with-restassured.html">1.32-RC</a>
+    <a class="version" href="../../latest/testing-and-troubleshooting/basic-integration-tests-with-restassured.html">1.31</a>
+    <a class="version" href="../../1.30.0.Final/testing-and-troubleshooting/basic-integration-tests-with-restassured.html">1.30</a>
+    <a class="version" href="../../1.29.0.Final/testing-and-troubleshooting/basic-integration-tests-with-restassured.html">1.29</a>
     <a class="version" href="../../1.28.0.Final/testing-and-troubleshooting/basic-integration-tests-with-restassured.html">1.28</a>
     <a class="version" href="../../1.27.0.Final/testing-and-troubleshooting/basic-integration-tests-with-restassured.html">1.27</a>
     <a class="version" href="../../1.26.0.Final/testing-and-troubleshooting/basic-integration-tests-with-restassured.html">1.26</a>
@@ -360,9 +375,7 @@
 <div class="title">Example request body</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
-  "workflowdata": {
-    "name": "John Doe"
-  }
+  "name": "John Doe"
 }</code></pre>
 </div>
 </div>
@@ -452,7 +465,7 @@ class HelloTest {
         given()
                 .contentType(ContentType.JSON) <i class="conum" data-value="2"></i><b>(2)</b>
                 .accept(ContentType.JSON) <i class="conum" data-value="3"></i><b>(3)</b>
-                .body("{\"workflowdata\": {\"name\": \"John Doe\"}}") <i class="conum" data-value="4"></i><b>(4)</b>
+                .body("{\"name\": \"John Doe\"}") <i class="conum" data-value="4"></i><b>(4)</b>
                 .when()
                 .post("/hello") <i class="conum" data-value="5"></i><b>(5)</b>
                 .then()
@@ -478,7 +491,7 @@ class HelloTest {
 </tr>
 <tr>
 <td><i class="conum" data-value="4"></i><b>4</b></td>
-<td>Defines the request body as <code>{"workflowdata": {"name": "John Doe"}}</code>.</td>
+<td>Defines the request body as <code>{"name": "John Doe"}</code>.</td>
 </tr>
 <tr>
 <td><i class="conum" data-value="5"></i><b>5</b></td>
