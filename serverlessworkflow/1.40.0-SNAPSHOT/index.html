@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Kogito Serverless Workflow Guides :: Kogito Serverless Workflow Guides</title>
+    <title>SonataFlow Guides :: SonataFlow Guides</title>
     <meta name="generator" content="Antora 3.1.4">
     <link rel="stylesheet" href="../../_/css/site.css">
 <link rel="icon" href="../../_/img/favicon.ico" type="image/x-icon">
@@ -24,7 +24,7 @@
                     <img src="../../_/img/kogitoLogo_default_64px.png" height="50px" alt="Kogito logo"/>
                 </a>
                 <a class="navbar-item" href="../..">
-                    Kogito Serverless Workflow Guides
+                    SonataFlow Guides
                 </a>
             </div>
                 <div class="navbar-item search hide-for-print">
@@ -56,7 +56,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="index.html">Kogito Serverless Workflow Guides</a></h3>
+    <h3 class="title"><a href="index.html">SonataFlow Guides</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -217,6 +217,9 @@
     <a class="nav-link" href="testing-and-troubleshooting/quarkus-dev-ui-extension/quarkus-dev-ui-workflow-definition-page.html">Workflow Definitions</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="testing-and-troubleshooting/quarkus-dev-ui-extension/quarkus-dev-ui-monitoring-page.html">Monitoring</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="testing-and-troubleshooting/quarkus-dev-ui-extension/quarkus-dev-ui-custom-dashboard-page.html">Dashboards</a>
   </li>
 </ul>
@@ -314,25 +317,43 @@
     <span class="nav-text">Integrations</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="integrations/camel-routes-integration.html">Integrating with Camel Routes</a>
+    <a class="nav-link" href="integrations/camel-routes-integration.html">Camel Routes</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="integrations/custom-functions-knative.html">Invoking Knative services</a>
+    <a class="nav-link" href="integrations/custom-functions-knative.html">Knative Serving</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="integrations/expose-metrics-to-prometheus.html">Exposing workflow base metrics to Prometheus</a>
+    <a class="nav-link" href="integrations/expose-metrics-to-prometheus.html">Exposing Prometheus Metrics</a>
   </li>
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow data in dashboards</a>
+    <a class="nav-link" href="integrations/serverless-dashboard-with-runtime-data.html">Displaying workflow Data in Dashboards</a>
   </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
     <button class="nav-item-toggle"></button>
-    <span class="nav-text">Supporting Services</span>
+    <span class="nav-text">Job Service</span>
 <ul class="nav-list">
   <li class="nav-item" data-depth="2">
-    <a class="nav-link" href="supporting-services/jobs-service.html">Job Service</a>
+    <a class="nav-link" href="job-services/core-concepts.html">Core Concepts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="job-services/quarkus-extensions.html">Quarkus Extensions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Data Index</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="data-index/data-index-core-concepts.html">Core concepts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="data-index/data-index-service.html">Standalone service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="data-index/data-index-quarkus-extension.html">Quarkus Extension</a>
   </li>
 </ul>
   </li>
@@ -355,21 +376,27 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">Kogito Serverless Workflow Guides</span>
+    <span class="title">SonataFlow Guides</span>
     <span class="version">1.40-RC</span>
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../latest/index.html">Kogito Serverless Workflow Guides</a>
+      <a class="title" href="../latest/index.html">SonataFlow Guides</a>
       <ul class="versions">
         <li class="version">
           <a href="../main/index.html">snapshot</a>
         </li>
         <li class="version">
-          <a href="../1.42.0-SNAPSHOT/index.html">1.42-RC</a>
+          <a href="../1.44.0-SNAPSHOT/index.html">1.44-RC</a>
         </li>
         <li class="version is-latest">
-          <a href="../latest/index.html">1.41</a>
+          <a href="../latest/index.html">1.43</a>
+        </li>
+        <li class="version">
+          <a href="../1.42.0.Final/index.html">1.42</a>
+        </li>
+        <li class="version">
+          <a href="../1.41.0.Final/index.html">1.41</a>
         </li>
         <li class="version">
           <a href="../1.40.0.Final/index.html">1.40</a>
@@ -438,15 +465,17 @@
   <a href="../latest/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="index.html">Kogito Serverless Workflow Guides</a></li>
+    <li><a href="index.html">SonataFlow Guides</a></li>
   </ul>
 </nav>
 <div class="page-versions">
   <button class="version-menu-toggle" title="Show other versions of page">1.40-RC</button>
   <div class="version-menu">
     <a class="version" href="../main/index.html">snapshot</a>
-    <a class="version" href="../1.42.0-SNAPSHOT/index.html">1.42-RC</a>
-    <a class="version" href="../latest/index.html">1.41</a>
+    <a class="version" href="../1.44.0-SNAPSHOT/index.html">1.44-RC</a>
+    <a class="version" href="../latest/index.html">1.43</a>
+    <a class="version" href="../1.42.0.Final/index.html">1.42</a>
+    <a class="version" href="../1.41.0.Final/index.html">1.41</a>
     <a class="version" href="../1.40.0.Final/index.html">1.40</a>
     <a class="version is-current" href="index.html">1.40-RC</a>
     <a class="version" href="../1.39.0.Final/index.html">1.39</a>
@@ -474,11 +503,11 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Kogito Serverless Workflow Guides</h1>
+<h1 class="page">SonataFlow Guides</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
-<p>Kogito Serverless Workflow is a tool for building cloud-native workflow applications. You can use it to do the services and events orchestration and choreography. Currently, with Kogito Serverless Workflow you can integrate with services and events in your architecture using:</p>
+<p>SonataFlow is a tool for building cloud-native workflow applications. You can use it to do the services and events orchestration and choreography. Currently, with SonataFlow you can integrate with services and events in your architecture using:</p>
 </div>
 <div class="olist arabic">
 <ol class="arabic">
@@ -489,7 +518,7 @@
 <p><strong>Sync or Async REST services invocations via OpenAPI/Async API</strong>. There are options even to directly call a REST service in the architecture or ecosystem. Either async or sync methods are supported depending on your requirements.</p>
 </li>
 <li>
-<p><strong>Internal Service execution or invocation</strong>. Kogito Serverless Workflow is also a workflow framework to build applications. You can use it to create custom services in the same thread to run a lightweight workflow-based application within the same instance.</p>
+<p><strong>Internal Service execution or invocation</strong>. SonataFlow is also a workflow framework to build applications. You can use it to create custom services in the same thread to run a lightweight workflow-based application within the same instance.</p>
 </li>
 </ol>
 </div>
@@ -524,7 +553,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="getting-started/getting-familiar-with-our-tooling.html" class="xref page">Getting familiar with Kogito Serverless Workflow tooling</a></p>
+<p><a href="getting-started/getting-familiar-with-our-tooling.html" class="xref page">Getting familiar with SonataFlow tooling</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn which tools you can use to author your workflow assets</p>
@@ -539,7 +568,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="core/custom-functions-support.html" class="xref page">Custom functions for your Kogito Serverless Workflow service</a></p>
+<p><a href="core/custom-functions-support.html" class="xref page">Custom functions for your SonataFlow service</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn about the custom functions supported by Serverless Workflow</p>
@@ -549,7 +578,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="core/understanding-jq-expressions.html" class="xref page">jq expressions in Kogito Serverless Workflow</a></p>
+<p><a href="core/understanding-jq-expressions.html" class="xref page">jq expressions in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to create jq expressions to manipulate data within a workflow execution</p>
@@ -559,7 +588,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="core/understanding-workflow-error-handling.html" class="xref page">Error handling in Kogito Serverless Workflow</a></p>
+<p><a href="core/understanding-workflow-error-handling.html" class="xref page">Error handling in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to handle errors in your workflow application</p>
@@ -569,7 +598,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="core/working-with-parallelism.html" class="xref page">Parallelism in Kogito Serverless Workflow</a></p>
+<p><a href="core/working-with-parallelism.html" class="xref page">Parallelism in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Working with parallelism in your workflow service</p>
@@ -579,7 +608,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="core/configuration-properties.html" class="xref page">Configuration properties in Kogito Serverless Workflow</a></p>
+<p><a href="core/configuration-properties.html" class="xref page">Configuration properties in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Quick reference of configuration properties in workflow</p>
@@ -589,7 +618,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="core/defining-an-input-schema-for-workflows.html" class="xref page">Input schema definition for Kogito Serverless Workflow</a></p>
+<p><a href="core/defining-an-input-schema-for-workflows.html" class="xref page">Input schema definition for SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn about the input schema definition used to validate the workflow data input against a defined JSON Schema</p>
@@ -599,7 +628,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="core/timeouts-support.html" class="xref page">Timeouts in Kogito Serverless Workflow</a></p>
+<p><a href="core/timeouts-support.html" class="xref page">Timeouts in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to configure timeouts in the workflow</p>
@@ -609,7 +638,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="core/working-with-parallelism.html" class="xref page">Parallelism in Kogito Serverless Workflow</a></p>
+<p><a href="core/working-with-parallelism.html" class="xref page">Parallelism in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Working with parallelism in your workflow project</p>
@@ -714,7 +743,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="eventing/handling-events-on-workflows.html" class="xref page">Event state in Kogito Serverless Workflow</a></p>
+<p><a href="eventing/handling-events-on-workflows.html" class="xref page">Event state in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to use the Event state in your workflow application</p>
@@ -724,7 +753,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="eventing/working-with-callbacks.html" class="xref page">Callback state in Kogito Serverless Workflow</a></p>
+<p><a href="eventing/working-with-callbacks.html" class="xref page">Callback state in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to use the Callback state in your workflow application</p>
@@ -754,7 +783,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="eventing/event-correlation-with-workflows.html" class="xref page">Event correlation in Kogito Serverless Workflow</a></p>
+<p><a href="eventing/event-correlation-with-workflows.html" class="xref page">Event correlation in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to configure event correlation in your workflow application</p>
@@ -764,7 +793,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="eventing/working-with-openapi-callbacks.html" class="xref page">OpenAPI Callback in Kogito Serverless Workflow</a></p>
+<p><a href="eventing/working-with-openapi-callbacks.html" class="xref page">OpenAPI Callback in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to use the OpenAPI Callback in your workflow application</p>
@@ -779,7 +808,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="security/authention-support-for-openapi-services.html" class="xref page">Authentication for OpenAPI services in Kogito Serverless Workflow</a></p>
+<p><a href="security/authention-support-for-openapi-services.html" class="xref page">Authentication for OpenAPI services in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to use authentication methods when calling REST services using OpenAPI specification</p>
@@ -814,10 +843,10 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="testing-and-troubleshooting/kn-plugin-workflow-overview.html" class="xref page">Kogito Serverless Workflow plug-in for Knative CLI</a></p>
+<p><a href="testing-and-troubleshooting/kn-plugin-workflow-overview.html" class="xref page">SonataFlow plug-in for Knative CLI</a></p>
 </div>
 <div class="paragraph card-description">
-<p>Learn how to install the Kogito Serverless Workflow plug-in for Knative CLI</p>
+<p>Learn how to install the SonataFlow plug-in for Knative CLI</p>
 </div>
 </div>
 </div>
@@ -834,7 +863,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="testing-and-troubleshooting/integration-tests-with-postgresql.html" class="xref page">Kogito Serverless Workflow integration test using PostgreSQL</a></p>
+<p><a href="testing-and-troubleshooting/integration-tests-with-postgresql.html" class="xref page">SonataFlow integration test using PostgreSQL</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how to integrate tests on workflow applications that use PostgreSQL as a persistence storage</p>
@@ -894,7 +923,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="cloud/index.html" class="xref page">Kogito Serverless Workflow in the Cloud</a></p>
+<p><a href="cloud/index.html" class="xref page">SonataFlow in the Cloud</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn about the options to deploy workflow applications in Kubernetes</p>
@@ -904,7 +933,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="use-cases/orchestration-based-saga-pattern.html" class="xref page">Saga orchestration example in Kogito Serverless Workflow</a></p>
+<p><a href="use-cases/orchestration-based-saga-pattern.html" class="xref page">Saga orchestration example in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how and when to use the SAGA pattern in your workflow projects</p>
@@ -914,7 +943,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="use-cases/timeout-showcase-example.html" class="xref page">Timeout example in Kogito Serverless Workflow</a></p>
+<p><a href="use-cases/timeout-showcase-example.html" class="xref page">Timeout example in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how and when to use timeout in your workflow projects</p>
@@ -939,10 +968,10 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="integrations/custom-functions-knative.html" class="xref page">Invoking Knative services from Kogito Serverless Workflow</a></p>
+<p><a href="integrations/custom-functions-knative.html" class="xref page">Invoking Knative services from SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
-<p>Learn how to invoke Knative services from Kogito Serverless Workflow custom functions</p>
+<p>Learn how to invoke Knative services from SonataFlow custom functions</p>
 </div>
 </div>
 </div>
@@ -974,10 +1003,55 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="supporting-services/jobs-service.html" class="xref page">Job Service</a></p>
+<p><a href="job-services/core-concepts.html" class="xref page">Job Service</a></p>
 </div>
 <div class="paragraph card-description">
-<p>Details about Job Service to control timers in Kogito Serverless Workflow</p>
+<p>Details about Job Service to control timers in SonataFlow</p>
+</div>
+</div>
+</div>
+<div class="openblock card">
+<div class="content">
+<div class="paragraph card-title">
+<p><a href="job-services/quarkus-extensions.html" class="xref page">Job Service Quarkus Extensions</a></p>
+</div>
+<div class="paragraph card-description">
+<p>Details about how to configure you Quarkus Workflow Project to interact with the Job Service in SonataFlow</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1 card-section">
+<h2 id="_data_index_service"><a class="anchor" href="#_data_index_service"></a>Data Index service</h2>
+<div class="sectionbody">
+<div class="openblock card">
+<div class="content">
+<div class="paragraph card-title">
+<p><a href="data-index/data-index-core-concepts.html" class="xref page">Data Index Core Concepts</a></p>
+</div>
+<div class="paragraph card-description">
+<p>Learn Data Index core concepts, allowing to understand the purpose and the different deployment options that are provided.</p>
+</div>
+</div>
+</div>
+<div class="openblock card">
+<div class="content">
+<div class="paragraph card-title">
+<p><a href="data-index/data-index-service.html" class="xref page">Data Index standalone service</a></p>
+</div>
+<div class="paragraph card-description">
+<p>Go deeper in details about Data Index as standalone service deployment.</p>
+</div>
+</div>
+</div>
+<div class="openblock card">
+<div class="content">
+<div class="paragraph card-title">
+<p><a href="data-index/data-index-quarkus-extension.html" class="xref page">Data Index Quarkus extension</a></p>
+</div>
+<div class="paragraph card-description">
+<p>Explore Data Index as Quarkus extension in  SonataFlow</p>
 </div>
 </div>
 </div>
@@ -989,7 +1063,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="use-cases/orchestration-based-saga-pattern.html" class="xref page">Saga orchestration example in Kogito Serverless Workflow</a></p>
+<p><a href="use-cases/orchestration-based-saga-pattern.html" class="xref page">Saga orchestration example in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how and when to use the SAGA pattern in your workflow projects</p>
@@ -999,7 +1073,7 @@
 <div class="openblock card">
 <div class="content">
 <div class="paragraph card-title">
-<p><a href="use-cases/timeout-showcase-example.html" class="xref page">Timeout example in Kogito Serverless Workflow</a></p>
+<p><a href="use-cases/timeout-showcase-example.html" class="xref page">Timeout example in SonataFlow</a></p>
 </div>
 <div class="paragraph card-description">
 <p>Learn how and when to use timeout in your workflow projects</p>

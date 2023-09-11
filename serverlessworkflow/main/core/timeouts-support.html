@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Timeouts in Kogito Serverless Workflow :: Kogito Serverless Workflow Guides</title>
-    <meta name="description" content="Using timeouts in Kogito Serverless Workflow">
+    <title>Timeouts in SonataFlow :: SonataFlow Guides</title>
+    <meta name="description" content="Using timeouts in SonataFlow">
     <meta name="keywords" content="kogito, workflow, serverless, timeout, timer, expiration">
     <meta name="generator" content="Antora 3.1.4">
     <link rel="stylesheet" href="../../../_/css/site.css">
@@ -26,7 +26,7 @@
                     <img src="../../../_/img/kogitoLogo_default_64px.png" height="50px" alt="Kogito logo"/>
                 </a>
                 <a class="navbar-item" href="../../..">
-                    Kogito Serverless Workflow Guides
+                    SonataFlow Guides
                 </a>
             </div>
                 <div class="navbar-item search hide-for-print">
@@ -58,7 +58,7 @@
     <div class="panels">
 <div class="nav-panel-menu is-active" data-panel="menu">
   <nav class="nav-menu">
-    <h3 class="title"><a href="../index.html">Kogito Serverless Workflow Guides</a></h3>
+    <h3 class="title"><a href="../index.html">SonataFlow Guides</a></h3>
 <ul class="nav-list">
   <li class="nav-item" data-depth="0">
 <ul class="nav-list">
@@ -69,6 +69,9 @@
     <button class="nav-item-toggle"></button>
     <span class="nav-text">Getting Started</span>
 <ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../getting-started/create-your-first-workflow-service-with-kn-cli-and-vscode.html">Creating and running workflow projects using KN CLI and Visual Studio Code</a>
+  </li>
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../getting-started/create-your-first-workflow-service.html">Creating a Quarkus Workflow Project</a>
   </li>
@@ -225,6 +228,9 @@
     <a class="nav-link" href="../testing-and-troubleshooting/quarkus-dev-ui-extension/quarkus-dev-ui-workflow-definition-page.html">Workflow Definitions</a>
   </li>
   <li class="nav-item" data-depth="4">
+    <a class="nav-link" href="../testing-and-troubleshooting/quarkus-dev-ui-extension/quarkus-dev-ui-monitoring-page.html">Monitoring</a>
+  </li>
+  <li class="nav-item" data-depth="4">
     <a class="nav-link" href="../testing-and-troubleshooting/quarkus-dev-ui-extension/quarkus-dev-ui-custom-dashboard-page.html">Dashboards</a>
   </li>
 </ul>
@@ -301,6 +307,9 @@
   <li class="nav-item" data-depth="3">
     <a class="nav-link" href="../cloud/operator/known-issues.html">Known Issues</a>
   </li>
+  <li class="nav-item" data-depth="3">
+    <a class="nav-link" href="../cloud/operator/migration-guide.html">Migration Guide</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="2">
@@ -351,6 +360,24 @@
   <li class="nav-item" data-depth="2">
     <a class="nav-link" href="../job-services/core-concepts.html">Core Concepts</a>
   </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../job-services/quarkus-extensions.html">Quarkus Extensions</a>
+  </li>
+</ul>
+  </li>
+  <li class="nav-item" data-depth="1">
+    <button class="nav-item-toggle"></button>
+    <span class="nav-text">Data Index</span>
+<ul class="nav-list">
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../data-index/data-index-core-concepts.html">Core concepts</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../data-index/data-index-service.html">Standalone service</a>
+  </li>
+  <li class="nav-item" data-depth="2">
+    <a class="nav-link" href="../data-index/data-index-quarkus-extension.html">Quarkus Extension</a>
+  </li>
 </ul>
   </li>
   <li class="nav-item" data-depth="1">
@@ -372,21 +399,27 @@
 </div>
 <div class="nav-panel-explore" data-panel="explore">
   <div class="context">
-    <span class="title">Kogito Serverless Workflow Guides</span>
+    <span class="title">SonataFlow Guides</span>
     <span class="version">snapshot</span>
   </div>
   <ul class="components">
     <li class="component is-current">
-      <a class="title" href="../../latest/index.html">Kogito Serverless Workflow Guides</a>
+      <a class="title" href="../../latest/index.html">SonataFlow Guides</a>
       <ul class="versions">
         <li class="version is-current">
           <a href="../index.html">snapshot</a>
         </li>
         <li class="version">
-          <a href="../../1.42.0-SNAPSHOT/index.html">1.42-RC</a>
+          <a href="../../1.44.0-SNAPSHOT/index.html">1.44-RC</a>
         </li>
         <li class="version is-latest">
-          <a href="../../latest/index.html">1.41</a>
+          <a href="../../latest/index.html">1.43</a>
+        </li>
+        <li class="version">
+          <a href="../../1.42.0.Final/index.html">1.42</a>
+        </li>
+        <li class="version">
+          <a href="../../1.41.0.Final/index.html">1.41</a>
         </li>
         <li class="version">
           <a href="../../1.40.0.Final/index.html">1.40</a>
@@ -455,7 +488,7 @@
   <a href="../../latest/index.html" class="home-link"></a>
 <nav class="breadcrumbs" aria-label="breadcrumbs">
   <ul>
-    <li><a href="../index.html">Kogito Serverless Workflow Guides</a></li>
+    <li><a href="../index.html">SonataFlow Guides</a></li>
     <li>Core Concepts</li>
     <li><a href="timeouts-support.html">Timeouts</a></li>
   </ul>
@@ -464,8 +497,10 @@
   <button class="version-menu-toggle" title="Show other versions of page">snapshot</button>
   <div class="version-menu">
     <a class="version is-current" href="timeouts-support.html">snapshot</a>
-    <a class="version" href="../../1.42.0-SNAPSHOT/core/timeouts-support.html">1.42-RC</a>
-    <a class="version" href="../../latest/core/timeouts-support.html">1.41</a>
+    <a class="version" href="../../1.44.0-SNAPSHOT/core/timeouts-support.html">1.44-RC</a>
+    <a class="version" href="../../latest/core/timeouts-support.html">1.43</a>
+    <a class="version" href="../../1.42.0.Final/core/timeouts-support.html">1.42</a>
+    <a class="version" href="../../1.41.0.Final/core/timeouts-support.html">1.41</a>
     <a class="version" href="../../1.40.0.Final/core/timeouts-support.html">1.40</a>
     <a class="version" href="../../1.40.0-SNAPSHOT/core/timeouts-support.html">1.40-RC</a>
     <a class="version" href="../../1.39.0.Final/core/timeouts-support.html">1.39</a>
@@ -493,12 +528,12 @@
   <div class="toc-menu"></div>
 </aside>
 <article class="doc">
-<h1 class="page">Timeouts in Kogito Serverless Workflow</h1>
+<h1 class="page">Timeouts in SonataFlow</h1>
 <div id="preamble">
 <div class="sectionbody">
 <div class="paragraph">
 <p>The Serverless Workflow specification defines several <a href="https://github.com/serverlessworkflow/specification/blob/0.8.x/specification.md#workflow-timeouts">timeouts configurations</a> that you can use to configure maximum times for the workflow execution in different scenarios.
-For example, you can configure how long a workflow can wait for an event to arrive when it is in a given state, etc. Currently, Kogito Serverless Workflow supports only the <a href="https://github.com/serverlessworkflow/specification/blob/0.8.x/specification.md#workflow-timeout-definition">workflow execution timeout</a> and <a href="https://github.com/serverlessworkflow/specification/blob/0.8.x/specification.md#event-timeout-definition">event timeouts</a>.</p>
+For example, you can configure how long a workflow can wait for an event to arrive when it is in a given state, etc. Currently, SonataFlow supports only the <a href="https://github.com/serverlessworkflow/specification/blob/0.8.x/specification.md#workflow-timeout-definition">workflow execution timeout</a> and <a href="https://github.com/serverlessworkflow/specification/blob/0.8.x/specification.md#event-timeout-definition">event timeouts</a>.</p>
 </div>
 <div class="paragraph">
 <p>Regardless of its application scope (workflow or state), the timeouts must be configured as an amount of time (a duration), which is considered to start when the referred scope becomes active. Timeouts use the <a href="https://en.wikipedia.org/wiki/ISO_8601"><code>ISO 8601</code> data and time standard</a> to specify a duration of time and follow the format <code>PnDTnHnMn.nS</code> with days considered to be exactly 24 hours.
@@ -507,7 +542,7 @@ For instance, <code>PT15M</code> configures 15 minutes, and <code>P2DT3H4M</code
 </div>
 </div>
 <div class="sect1">
-<h2 id="_workflow_timeout"><a class="anchor" href="#_workflow_timeout"></a>Workflow timeout</h2>
+<h2 id="workflow-timeout"><a class="anchor" href="#workflow-timeout"></a>Workflow timeout</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>To configure the maximum amount of time a workflow can be running before being canceled, you can use the workflow timeout.
@@ -521,11 +556,11 @@ Once canceled, the workflow is considered to be finished, and will not be access
 <div class="title">Example of workflow timeout</div>
 <div class="content">
 <pre class="highlightjs highlight"><code class="language-json hljs" data-lang="json">{
-  "id": "workflow_timeout",
+  "id": "workflow_timeouts",
   "version": "1.0",
-  "name": "Workflow timeout example",
-  "description": "An example of how workflow timeout works",
-  "start": "printWaitMessage",
+  "name": "Workflow Timeouts",
+  "description": "Simple workflow to show the workflowExecTimeout working",
+  "start": "PrintStartMessage",
   "timeouts": {
     "workflowExecTimeout": "PT1H"
   } ...
@@ -553,7 +588,7 @@ This is the only property that is supported in current implementation.</p>
 <p>The Callback state can be used when you need to execute an action, in general to call an external service, and wait for an asynchronous response in form of an event, the callback.</p>
 </div>
 <div class="paragraph">
-<p>Once the response event is consumed, the workflow continues the execution, in general moving to the next state defined in the <code>transition</code> property. See more on <a href="working-with-callbacks.html" class="xref page">Callback state in Kogito Serverless Workflow</a>.</p>
+<p>Once the response event is consumed, the workflow continues the execution, in general moving to the next state defined in the <code>transition</code> property. See more on <a href="working-with-callbacks.html" class="xref page">Callback state in SonataFlow</a>.</p>
 </div>
 <div class="paragraph">
 <p>Since the Callback state halts the execution until the event is consumed, you can configure an <code>eventTimeout</code> for it, and in case the event does not arrive in the configured time duration, the workflow continues the execution moving to the next state defined in the transition, see the <a href="#callback-state">example</a>.</p>
@@ -723,13 +758,13 @@ If the Event state is a starting state, a new workflow instance is created.</p>
 <h2 id="_deploying_a_timed_based_workflow"><a class="anchor" href="#_deploying_a_timed_based_workflow"></a>Deploying a timed-based workflow</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To deploy a workflow that uses timeouts, or any other timer-based action, it is necessary to have a job service running in your environment, which is an independent service responsible to control the workflows timers, see the <a href="../job-services/core-concepts.html#job-service" class="xref page">job service</a> for more information.
+<p>To deploy a workflow that uses timeouts, or any other timer-based action, it is necessary to have a <a href="../job-services/core-concepts.html" class="xref page">job service</a> running in your environment, which is an independent service responsible to control the workflows timers, see the <a href="../job-services/core-concepts.html#integration-with-the-workflows" class="xref page">job service</a> for more information.
 The provisioning of this service depends on the work mode that you are using.</p>
 </div>
 <div class="sect2">
 <h3 id="_sonataflow_operator_dev_profile"><a class="anchor" href="#_sonataflow_operator_dev_profile"></a>SonataFlow Operator Dev Profile</h3>
 <div class="paragraph">
-<p>When you work with the SonataFlow Operator Dev Profile, the operator will automatically provide an execution environment that contains an embedded job service instance, as well as an instance of the data index service.
+<p>When you work with the SonataFlow Operator Dev Profile, the operator will automatically provide an execution environment that contains an embedded <a href="../job-services/core-concepts.html" class="xref page">job service</a> instance, as well as an instance of the <a href="../data-index/data-index-core-concepts.html" class="xref page">data index service</a>.
 And thus, there is no need for additional configurations.</p>
 </div>
 <div class="paragraph">
@@ -752,7 +787,7 @@ And thus, there is no need for additional configurations.</p>
 </ol>
 </div>
 <div class="paragraph">
-<p>In the <a href="../job-services/core-concepts.html#job-service" class="xref page">job service</a> guide you can see all the available add-dons and configuration alternatives for this case.</p>
+<p>In the <a href="../job-services/core-concepts.html" class="xref page">job service</a> guide you can see all the available add-ons and configuration alternatives for this case.</p>
 </div>
 </div>
 </div>
@@ -761,7 +796,7 @@ And thus, there is no need for additional configurations.</p>
 <h2 id="timeouts-showcase"><a class="anchor" href="#timeouts-showcase"></a>Timeouts showcase</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>To see the examples about how configure the timeouts, and execute them in different deployment scenarios, you can use the <a href="../use-cases/timeout-showcase-example.html" class="xref page">Timeouts showcase in Kogito Serverless Workflow</a></p>
+<p>To see the examples about how configure the timeouts, and execute them in different deployment scenarios, you can use the <a href="../use-cases/timeout-showcase-example.html" class="xref page">Timeouts showcase in SonataFlow</a></p>
 </div>
 </div>
 </div>
@@ -771,7 +806,7 @@ And thus, there is no need for additional configurations.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="working-with-callbacks.html" class="xref page">Callback state in Kogito Serverless Workflow</a></p>
+<p><a href="working-with-callbacks.html" class="xref page">Callback state in SonataFlow</a></p>
 </li>
 </ul>
 </div>
